@@ -10,7 +10,7 @@ So, this is how I did it.
 
 The convention amongst UDM Pro modifiers seems to be to use a systemd service named `udm-boot` which actually just executes whatever shell scripts are in a particular directory on the UDM Pro's persistent data partition.
 
-The UDM SE has systemd and a persistent data partition, but it's mounted in a different location, so we will follow the pattern and just adapt the paths.
+The UDM SE has systemd and a persistent data partition, but it's mounted in a different location (`/data` instead of `/mnt/data`), so we will follow the pattern and just adapt the paths.
 
 SSH into your UDM SE and create `/etc/systemd/system/udm-boot.service` with the following contents:
 
