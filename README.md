@@ -39,7 +39,7 @@ Check `/data/on_boot.d/` exists
 
 ## Step 2: Installing tailscale integration
 
-Fetch the tailscale/udm integration scripts and extract them nto the persistent data partition:
+Fetch the tailscale/udm integration scripts and extract them into the persistent data partition:
 ```
 wget https://github.com/SierraSoftworks/tailscale-udm/releases/download/v2.2.1/tailscale-udm.tgz
 cd /data/
