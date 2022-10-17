@@ -35,7 +35,7 @@ systemctl enable /etc/systemd/system/udm-boot.service
 systemctl start udm-boot.service
 ```
 
-Check /data/on_boot.d/ exists
+Check `/data/on_boot.d/` exists
 
 ## Step 2: Installing tailscale integration
 
