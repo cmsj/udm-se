@@ -51,7 +51,7 @@ tar xvf ~root/tailscale-udm.tgz
 This is basically a process of updating all of the scripts involved, to refer to `/data` instead of `/mnt/data`:
 
  * Edit `/data/tailscale/manage.sh` and change all `/mnt/data` to `/data` (should be about 3 edits)
- * Run `/data/tailscale/manage.sh install` (this actually fetches and installs the tailscale binaries to `/data/tailscale`)
+ * Run `/data/tailscale/manage.sh install` (this actually fetches and installs the tailscale binaries to `/data/tailscale/`)
  * Edit `/data/on_boot.d/10-tailscaled.sh` and change all `/mnt/data` to `/data` (should only be one edit)
  * Run `/data/tailscale/manage.sh on-boot` - this checks if a tailscale update exists and then starts the service
  * You should see that tailscale starts and prints out a `login.tailscale.com` URL. Open the URL and authorize the device
